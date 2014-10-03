@@ -30,6 +30,7 @@ describe('Angular Password Validator', function () {
     };
     var scope = compileToHtml(html, $rootScope).scope();
     expect(scope.epicForm.$invalid).toBeTruthy();
+    expect(scope.epicForm.$error.passwordNoMatch).toBeTruthy();
   });
 
   it('should set form to valid if passwords match', function () {
