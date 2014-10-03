@@ -45,7 +45,7 @@
         var manager = ctrl[0], model = ctrl[1];
 
         function setValidity(viewValue){
-          model.$setValidity('invalidSecondPassword', manager.validatePasswords(viewValue));
+          model.$setValidity('passwordNoMatch', manager.validatePasswords(viewValue));
         }
 
         scope.$watch(function(){
