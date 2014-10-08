@@ -2,7 +2,7 @@
   "name": "angular-password-validator",
   "version": "1.0.0",
   "description": "angular password validator",
-  "main": "angular-password-validator",
+  "main": "./dist/angular-password-validator.js",
   "license": "MIT",
   "ignore": [
     "node_modules"
