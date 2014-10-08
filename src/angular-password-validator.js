@@ -3,6 +3,10 @@
 
   var module = angular.module('passwordValidatorModule', []);
 
+  /**
+   * Parent Directive Has to be attached to parent html element.
+   * Holds first password field value and compares it with second password field value.
+   */
   module.directive('passwordManager', function(){
       return {
         restrict : 'A',
@@ -23,6 +27,9 @@
       };
     });
 
+  /**
+   * First password field directive. Just saves field value to password manager.
+   */
   module.directive('passwordFieldOne', function(){
     return {
       restrict : 'A',
@@ -37,6 +44,12 @@
     };
   });
 
+  /**
+   * Second password field directive.
+   * Asks password manager for first field value and compares it with second field current value.
+   * If values do not match, sets form validity to false.
+   * Is also triggered if first field value changes.
+   */
   module.directive('passwordFieldTwo', function(){
     return {
       restrict : 'A',
