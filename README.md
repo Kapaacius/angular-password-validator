@@ -12,7 +12,6 @@ A simple directive to validate if two password fields match.
             <input name="fieldTwo" type="text" data-ng-model="fieldTwo"
                 data-password-field-two/>
                     
-            <span class="red" ng-if="form.$invalid">wrong</span>
         </div>
     </form>
   
