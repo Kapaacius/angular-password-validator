@@ -3,20 +3,18 @@ A simple directive to validate if two password fields match.
 
 # Usage
 
-    <div ng-app="myApp">
-    Try me!
-        <form name="form">
-            <div data-password-manager>
-                <input name="fieldOne" type="text" data-ng-model="fieldOne"
-                data-password-field-one/>
+    
+    <form name="form">
+        <div data-password-manager>
+            <input name="fieldOne" type="text" data-ng-model="fieldOne"
+            data-password-field-one/>
 
-                <input name="fieldTwo" type="text" data-ng-model="fieldTwo"
-                    data-password-field-two/>
-                        
-                <span class="red" ng-if="form.$invalid">wrong</span>
-            </div>
-        </form>
-    </div>
+            <input name="fieldTwo" type="text" data-ng-model="fieldTwo"
+                data-password-field-two/>
+                    
+            <span class="red" ng-if="form.$invalid">wrong</span>
+        </div>
+    </form>
   
 # Sample
 Sample fiddle
