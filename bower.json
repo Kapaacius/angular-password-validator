@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "description": "angular password validator",
   "main": "./dist/angular-password-validator.js",
+  "homepage": "https://github.com/Kapaacius/angular-password-validator",
   "license": "MIT",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "password",
+    "match password",
+    "passwords",
+    "angular-password-validator",
+    "password validator"
+  ],
   "ignore": [
     "node_modules"
   ],
